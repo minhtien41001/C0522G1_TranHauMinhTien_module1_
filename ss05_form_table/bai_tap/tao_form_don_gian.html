@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<table border="0" width="70%">
-    <tr>
-        <th colspan="2" style="background: orange"  > Sở thích của bạn</th> <!--table head-->
-    </tr>
-    <tr>
-        <td> Họ và tên</td><br>
-        <td> <input type="text"></td> <!--table data-->
-    </tr>
-    <tr>
-        <td> Email</td><br>
-        <td> <input type="text"></td>
-    </tr>
-    <tr>
-        <td>Sở thích </td>
-        <td><input type="checkbox" name="hobby" value="Thể thao" checked>Thể Thao
-            <input type="checkbox" name="hobby" value="Đọc sách" >Đọc sách
-            <input type="checkbox" name="hobby" value="Âm nhạc" checked>Âm nhạc
+<style>
+    th {
+        font-size: 30px;
+        margin-left: 30px;
+        color: white;
+        background-color: red;
+    }
 
-            <br><br>
-            <input type="checkbox" name="hobby" value="Lướt web" checked>Lướt web
-            <input type="checkbox" name="hobby" value="chơi game" checked>Chơi game
-            <input type="checkbox" name="hobby" value="Điện ảnh" >Điện ảnh
-            <br><br>
-            <input type="checkbox" name="hobby" value="Du lịch" >Du
-            lịch<br><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        </td>
-        <td>
-            <input type="submit"value="Gửi thông tin">
-            <input type="submit"value="Nhập lại">
-        </td>
-    </tr>
-</table>
+
+</style>
+<body>
+<form action="TaoFormĐonGian.html" method="get">
+    <table align="center" >
+        <tr>
+            <th colspan="8">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr>
+            <td  style="text-align: right;color: blue"  >Họ và tên :</td>
+            <td colspan="3" ><input style="width: 95%" type="text" name="name"></td>
+
+        </tr>
+        <tr>
+            <td style="text-align: left;color: blue" >Email :</td>
+            <td colspan="3"> <input style="width: 95%" type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td style="color: blue"  > Sở thích :</td>
+            <td><input type="checkbox" name="thethao"> Thể thao</td>
+            <td><input type="checkbox" name="amnhac"> Âm nhạc</td>
+            <td><input type="checkbox" name="docsach"> Đọc sách</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="luotweb"> Lướt web</td>
+            <td><input type="checkbox" name="game"> Chơi game</td>
+            <td><input type="checkbox" name="dienanh"> Điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="dulich"> Du lịch</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td > <input type="submit" value="Gửi thông tin"></input></td>
+            <td><input type="reset" value="Nhập lại"></input></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
