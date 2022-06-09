@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let canNang=prompt('Nhập vào cân nặng(kg):');
+    let chieuCao=prompt('Nhập vào chiều cao(m):');
+    let bMI=parseFloat(canNang/(chieuCao*chieuCao));
+      if (bMI<18.5) {
+          alert('Underweight');
+      }else if(bMI<25.0){
+          alert ('Normal');
+      }else if (bMI<30.0){
+          alert('Overweight');
+      }else
+          alert('Obese')
+
+</script>
+</body>
+</html>

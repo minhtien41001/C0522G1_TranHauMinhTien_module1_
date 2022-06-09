@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td><input type="number" name="number" id="1"></td>-->
+<!--        <td><button onclick="soNgay()">tinh so ngay</button></td>-->
+<!--        <span id="show"></span>-->
+<!--    </tr>-->
+<!--</table>-->
+ <input type="number" name="thang" id='1'>
+ <button onclick="soNgay()">Tính số ngày</button>
+ <span id="show"></span>
+
+<script>
+   function soNgay() {
+       let number =document.getElementById(1).value;
+         switch (parseInt(number)) {
+             case 1:
+             case 3:
+             case 5:
+             case 7:
+             case 8:
+             case 10:
+             case 12:
+                 document.getElementById('show').innerHTML='Tháng có 31 ngày';
+                 break;
+             case 4:
+             case 6:
+             case 9:
+             case 11:
+                 document.getElementById('show').innerHTML='Tháng có 30 ngày';
+                 break;
+             case 2:
+                 document.getElementById('show').innerHTML='Tháng có 28 hoặc 29 ngày';
+                 break;
+             default:
+                 alert('Không có tháng này')
+                 }
+         }
+
+
+</script>
+</body>
+</html>
