@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let diemkt = parseInt(prompt('Nhập điểm kiểm tra'));
+    let diemgk = parseInt(prompt('Nhập điểm giữa kì'));
+    let diemck = parseInt(prompt('Nhập điểm cuối kì'));
+    let diemtrungbinh = (diemkt*20/100 + diemgk*30/100 +diemck*50/100)
+        if (diemtrungbinh >8) {
+            alert('Đạt học sinh giỏi');
+        }else if (diemtrungbinh>6.5){
+            alert('Đạt học sinh khá');
+        }else if (diemtrungbinh>5){
+            alert('Đạt học sinh trung bình')
+        }else {
+            alert('Đạt học sinh yếu')
+        }
+</script>
 </body>
 </html>

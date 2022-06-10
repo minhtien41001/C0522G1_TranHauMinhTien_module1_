@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>Meter-Feet</h2>
+<table border="2px solid black">
+    <tr>
+        <td><label for="inputmeter" style="font-weight: bold">Input-Meter:</label></td>
+        <td><input type="number" name="meter" placeholder="Meter number" id="inputmeter"></td>
+    </tr>
+    <tr>
+        <td><label style="font-weight: bold">Feet:</label></td>
+        <td id="feet"></td>
+    </tr>
+    <tr>
+        <td><input type="button" name="convert" value="Convert" onclick="result()"></td>
+    </tr>
+</table>
+<script>
+    function result() {
+        let meter = document.getElementById("inputmeter").value;
+        let feet = meter*3.2808;
+        document.getElementById("feet").innerText = feet;
+
+    }
+</script>
 </body>
 </html>

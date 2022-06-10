@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseFloat(prompt('Nhập vào hệ số a'));
+    let b = parseFloat(prompt('Nhập vào hệ số b'));
+    let resultX;
+    if (a == 0 & b == 0){
+        alert('Phương trình có vô só nghiệm');
+    }
+    else if (a == 0 & b != 0){
+        alert('Phương trình vô nghiệm');
+    }
+    else {
+        resultX = -b/a;
+        alert('Nghiệm của phương trình là :' + resultX)
+    }
+</script>
 </body>
 </html>
