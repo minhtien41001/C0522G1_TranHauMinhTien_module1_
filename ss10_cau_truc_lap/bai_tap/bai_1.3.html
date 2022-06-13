@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1 =0;
+    let f2 = 1;
+    let f3 = 0;
+    let n=parseInt(prompt('Nhập số lượng số của dãy'))
+    for(let i = 0;i<n ;i++){
+        if(i<=1){
+            f3 = i;
+        }
+        else{
+            f3 = f1+f2;
+            f1 = f2;
+            f2 =f3 ;
+        }
+        document.write(f3+" ");
+    }
+</script>
+</body>
+</html>
