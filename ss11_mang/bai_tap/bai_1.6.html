@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt('a[' + i + ']'));
+    }
+    console.log(arr);
+    // let arr = [1,2,3,4,5,6,7,8,9,10];
+    let number = parseInt(prompt('Nhap so can kiem tra'));
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (number == arr[i]) {
+            document.write(number + ' nam trong day so');
+            count++;
+        }
+    }if (count == 0){
+        document.write(number + ' khong nam trong day so');
+    }
+</script>
+</body>
+</html>
