@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function soSanh(a,b,c) {
+        if (a < c){
+            if (a < b){
+                alert(a + ' la so be nhat');
+            }else{
+                alert(b + ' la so be nhat');
+            }
+        }else{
+            if (c < b){
+                alert(c + ' la so be nhat');
+            }else{
+                alert(b + ' la so be nhat')
+            }
+        }
+    }
+    let a = parseInt(prompt('Nhap so thu nhat'));
+    let b = parseInt(prompt('Nhap so thu hai'));
+    let c = parseInt(prompt('Nhap so thu ba'));
+    document.write(soSanh(a,b,c));
+</script>
+</body>
+</html>

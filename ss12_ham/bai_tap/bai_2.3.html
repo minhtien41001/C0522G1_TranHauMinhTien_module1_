@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiThua(a) {
+        let ketQua = 1;
+        for (let i=1;i <= a;i++ ){
+            ketQua = ketQua * i;
+        }
+        return ketQua;
+    }
+    let number = parseInt(prompt('Nhap so can tinh: '));
+       let ketQua = giaiThua(number);
+       document.write(ketQua);
+</script>
+</body>
+</html>

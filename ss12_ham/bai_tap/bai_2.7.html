@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuyenDoi(array) {
+        let temp = array[0];
+        array[0] = array[1];
+        array[1] = temp
+        return array;
+    }
+    let number1 = parseInt(prompt(' Nhap so thu nhat:'));
+    let number2 = parseInt(prompt('Nhap so thu hai:'));
+    let array = [number1,number2];
+    document.write(chuyenDoi(array));
+
+</script>
+</body>
+</html>
